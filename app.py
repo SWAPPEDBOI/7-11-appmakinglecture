@@ -59,3 +59,4 @@ if st.button("코디 완성하기"):
         with st.expander("코디 연출 팁 영상 보기"):
             st.video("https://www.youtube.com/watch?v=lkMZ8ytly1k")
             st.write("전문가가 제안하는 코디 연출법을 참고해 보세요.")
+st.button("전체초기화", on_click-reset_all)
