@@ -9,8 +9,8 @@ score = st.slider("점수", 0, 100,50)
 sogam = st.text_input("소감")
 
 if st.button("확인"):
-    st.success(f"({name})/({grade}학년)/({klass}반)/{difficulty}")
+    st.success(f"{name}/{grade}학년/{klass}반/{difficulty}")
     st.markdown(f"""
-    * 점수:st.success({score})
+    점수:st.success({score})
     """)
-    st.info("(소감:{sogam})")
+    st.info("소감:{sogam}")
