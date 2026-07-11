@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.markdown("앱 UI 만들기")
+st.markdown("# 앱 UI 만들기")
 name = st.text_input("이름", placeholder="이름")
 grade = st.radio("학년", ["1", "2", "3"], horizontal=True)
 klass = st.number_input("반", value=1)
@@ -11,6 +11,6 @@ sogam = st.text_input("소감")
 if st.button("확인"):
     st.success(f"({name})/({grade}학년)/({klass}반)/{difficulty}")
     st.markdown(f"""
-    * **점수:{score}
+    * 점수:st.success({score})
     """)
-    st.info("소감:{sogam}")
+    st.info("(소감:{sogam})")
